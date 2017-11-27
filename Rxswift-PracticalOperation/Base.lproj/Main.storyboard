@@ -207,7 +207,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="登      录"/>
                                 <connections>
-                                    <segue destination="mjh-cy-5he" kind="push" id="de4-AP-SgU"/>
+                                    <segue destination="mjh-cy-5he" kind="push" identifier="ListViewController" id="ioc-9d-QP3"/>
                                 </connections>
                             </button>
                         </subviews>

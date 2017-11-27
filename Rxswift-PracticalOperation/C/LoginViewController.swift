@@ -39,7 +39,7 @@ class LoginViewController: UIViewController {
         viewmodel.loginResult.drive(onNext: { [weak self](result) in
             switch result {
             case let .ok(message):
-//                self?.performSegue(withIdentifier: "showListSegue", sender: nil)
+//                self?.performSegue(withIdentifier: "ListViewController", sender: nil)
                 self?.showAlert(message: message)
             case .empty:
                 self?.showAlert(message: "")
