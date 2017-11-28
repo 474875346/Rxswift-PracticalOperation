@@ -26,7 +26,9 @@ class ListViewController: UIViewController {
             cell.textLabel?.text = element.name
             cell.detailTextLabel?.text = element.phone
             }.disposed(by: disposeBag)
-        
+        tableview.rx.modelSelected(Contact.self).subscribe(onNext: { (model) in
+            print(model.name)
+        }).disposed(by: disposeBag)
         
     }
 }
